@@ -13,24 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package org.rulelearn.usecases;
 
 /**
- * Shows functionalities of ruleLearn library.
+ * Converts data (objects) from CSV format to JSON format. Employs metadata (attributes) in JSON format.
  *
  * @author Jerzy Błaszczyński (<a href="mailto:jurek.blaszczynski@cs.put.poznan.pl">jurek.blaszczynski@cs.put.poznan.pl</a>)
  * @author Marcin Szeląg (<a href="mailto:marcin.szelag@cs.put.poznan.pl">marcin.szelag@cs.put.poznan.pl</a>)
  */
-public class UseCases {
+public class ConvertCsv2Json {
 
-	/**
-	 * Application entry point.
-	 * 
-	 * @param args input arguments of this application (ignored)
-	 */
-	public static void main(String[] args) {
-		System.out.println("Hello ruleLearn user! Run particular use cases to see their results.");
+	public static void convertCsv2Json(String metadataJSONFilePath, String dataCsvFilePath) {
+		//TODO: implement
 	}
 	
+	public static void main(String[] args) {
+		//TODO: call convertCsv2Json with proper arguments
+	}
 }
