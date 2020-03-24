@@ -71,7 +71,7 @@ public class CrossValidation {
 				assignedDecisions[testObjectIndex] = simpleRuleClassifier.classify(testObjectIndex, foldTestData).getSuggestedDecision();
 			}
 
-			Decision[] orderOfDecisions = foldTestData.getOrderedUniqueFullyDeterminedDecisions();
+			Decision[] orderOfDecisions = informationTableWithDistributions.getOrderedUniqueFullyDeterminedDecisions();
 			OrdinalMisclassificationMatrix ordinalMisclassificationMatrix = new OrdinalMisclassificationMatrix(orderOfDecisions, foldTestData.getDecisions(), assignedDecisions); //construct misclassification matrix using original and assigned decisions of test objects
 			ordinalMisclassificationMatrices[foldIndex] = ordinalMisclassificationMatrix; //remember misclassification matrix for current fold
 		}
