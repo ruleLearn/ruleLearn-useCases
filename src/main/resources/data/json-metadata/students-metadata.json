@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Name",
+    "active": true,
+    "identifierType": "text"
+  },
+  {
+    "name": "ID",
+    "active": false,
+    "preferenceType": "none",
+    "type": "description",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "Gender",
+    "active": true,
+    "preferenceType": "none",
+    "type": "condition",
+    "valueType": "enumeration",
+    "domain": [
+      "male",
+      "female"
+    ],
+    "algorithm": "SHA-256",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "Mathematics",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "enumeration",
+    "domain": [
+      "bad",
+      "medium",
+      "good"
+    ],
+    "algorithm": "SHA-256",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "Physics",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "enumeration",
+    "domain": [
+      "bad",
+      "medium",
+      "good"
+    ],
+    "algorithm": "SHA-256",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "Literature",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "enumeration",
+    "domain": [
+      "bad",
+      "medium",
+      "good"
+    ],
+    "algorithm": "SHA-256",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "AbsentDays",
+    "active": true,
+    "preferenceType": "cost",
+    "type": "condition",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "Age_g",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "Age_c",
+    "active": true,
+    "preferenceType": "cost",
+    "type": "condition",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "Citizenship_US",
+    "active": true,
+    "preferenceType": "none",
+    "type": "condition",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "Citizenship_EU",
+    "active": true,
+    "preferenceType": "none",
+    "type": "condition",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "Citizenship_other",
+    "active": true,
+    "preferenceType": "none",
+    "type": "condition",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "Overall",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "decision",
+    "valueType": "enumeration",
+    "domain": [
+      "bad",
+      "medium",
+      "good"
+    ],
+    "algorithm": "SHA-256",
+    "missingValueType": "mv2"
+  }
+]
