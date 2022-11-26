@@ -46,7 +46,7 @@ public class CrossValidation {
 		InformationTableWithDecisionDistributions informationTableWithDistributions = new InformationTableWithDecisionDistributions(informationTable, true);
 
 		CrossValidator crossValidator = new CrossValidator(ThreadLocalRandom.current()); //TODO?: use seed-enabled random generator
-		List<CrossValidator.CrossValidationFold<InformationTable>> folds = crossValidator.splitStratifiedIntoKFold(informationTableWithDistributions, foldsCount); //split train data in foldsCount folds
+		List<CrossValidator.CrossValidationFold<InformationTable>> folds = crossValidator.splitStratifiedIntoKFolds(informationTableWithDistributions, foldsCount); //split train data in foldsCount folds
 
 		@SuppressWarnings("unused")
 		InformationTableWithDecisionDistributions foldTrainDataWithDistributions;

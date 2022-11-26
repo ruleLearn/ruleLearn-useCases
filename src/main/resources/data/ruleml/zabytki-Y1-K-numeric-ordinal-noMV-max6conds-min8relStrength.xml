@@ -1,0 +1,6882 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://deliberation.ruleml.org/1.01/relaxng/datalogplus_min_relaxed.rnc"?>
+<RuleML xmlns="http://ruleml.org/spec">
+<act index="1" learningDataHash="9E968B75FAFCDFC7CE9B13437199B1D761C4211077931A8AAD246449121ACC3B">
+<assert>
+	<implies type="certain">
+		<if>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1954</ind>
+					<var>Year1</var>
+				</atom>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="13"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>3</ind>
+					<var>K1</var>
+				</atom>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="4"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K2</var>
+				</atom>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="9"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>3</ind>
+					<var>K4</var>
+				</atom>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="5"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K6</var>
+				</atom>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="18"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K7</var>
+				</atom>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="31"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K8</var>
+				</atom>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="7"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1969</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K3</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="8"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1967</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="10"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1965</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K5</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="10"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1958</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K4</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="4"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1958</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="12"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1957</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K3</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="7"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1956</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="10"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1956</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="6"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="8"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="13"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K3</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="6"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K3</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="5"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K4</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="4"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K5</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="5"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="7"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="9"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="5"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="6"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K5</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="9"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K5</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="5"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="5"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="9"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1982</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="13"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1975</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="6"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1974</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="20"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1974</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K3</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="8"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1970</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K3</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="5"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1970</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="4"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1964</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K4</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="5"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1964</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K4</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="5"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1963</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="9"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1963</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="7"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1961</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K4</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="5"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1958</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="7"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="10"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="4"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="6"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="15"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>2</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="4"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="5"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">ge</rel>
+					</op>
+					<ind>yes</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>ge</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="11"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1976</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="9"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1983</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="4"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1990</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="4"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1955</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="19"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1970</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="6"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1970</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="10"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1972</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="19"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1972</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="13"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1975</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="7"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1983</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="5"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1983</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="7"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1983</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="7"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K3</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="18"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1955</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="15"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1955</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="14"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1958</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="37"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1958</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="46"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1960</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="11"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1960</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="11"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1960</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="11"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1962</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="20"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1968</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="15"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1968</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="19"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1968</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="10"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1972</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="19"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1972</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="12"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1974</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="6"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1974</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="10"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1975</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="10"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1975</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="13"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="28"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>2</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="19"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>2</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="19"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="19"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="19"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="6"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="7"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="36"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="22"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1955</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="14"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1955</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K5</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="29"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1955</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="9"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1955</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="13"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1955</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="9"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1955</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="9"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1955</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="13"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1955</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="13"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1955</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="18"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1955</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K5</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="36"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1962</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K5</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="14"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1965</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="22"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1965</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="32"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1965</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="17"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1967</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="17"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1968</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="12"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1968</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="12"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1968</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="17"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1968</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="17"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1968</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="9"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1970</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="8"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1972</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K4</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="9"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1972</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="13"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1972</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="8"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1972</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="13"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1972</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="19"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="13"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="23"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="14"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K5</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="11"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="6"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>2</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="7"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="6"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>2</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="7"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="18"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K5</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="31"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="32"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="18"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K5</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="13"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K5</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="17"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1957</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="17"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1957</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="23"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1960</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K5</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="24"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1960</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K5</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="24"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1960</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K5</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="31"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1962</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="13"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1962</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K5</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="14"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1966</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K5</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="20"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1966</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="5"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1966</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K8</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="19"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1968</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="9"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">ge</rel>
+				</op>
+				<ind>1968</ind>
+					<var>Year1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="5"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K1</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K5</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="17"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K7</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="12"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+<assert>
+	<implies type="certain">
+		<if>
+			<and>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K2</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K3</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K4</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>1</ind>
+					<var>K5</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K6</var>
+				</atom>
+				<atom>
+				<op>
+					<rel type="threshold-object">le</rel>
+				</op>
+				<ind>0</ind>
+					<var>K9</var>
+				</atom>
+			</and>
+		</if>
+		<then>
+					<atom>
+					<op>
+						<rel type="threshold-object">le</rel>
+					</op>
+					<ind>no</ind>
+						<var>Monument</var>
+					</atom>
+		</then>
+		<ruleSemantics>le</ruleSemantics>
+		<evaluations>
+			<evaluation measure="Support" value="7"/>
+			<evaluation measure="Confidence" value="1.0"/>
+		</evaluations>
+	</implies>
+</assert>
+</act>
+</RuleML>

@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Name",
+    "active": true,
+    "identifierType": "text"
+  },
+  {
+    "name": "Function",
+    "active": false,
+    "preferenceType": "none",
+    "type": "condition",
+    "valueType": "enumeration",
+    "domain": [
+      "A",
+      "E",
+      "H",
+      "I",
+      "M",
+      "G",
+      "P",
+      "Q",
+      "R",
+      "T",
+      "Z",
+      "AH",
+      "AI",
+      "MH",
+      "MQ"
+    ],
+    "algorithm": "SHA-256",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "Author",
+    "active": false,
+    "identifierType": "text"
+  },
+  {
+    "name": "Localization",
+    "active": false,
+    "identifierType": "text"
+  },
+  {
+    "name": "Year1",
+    "active": true,
+    "preferenceType": "cost",
+    "type": "condition",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "Year2",
+    "active": false,
+    "preferenceType": "cost",
+    "type": "condition",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "K1",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "K2",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "K3",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "K4",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "K5",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "K6",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "K7",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "K8",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "K9",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "K10",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "condition",
+    "valueType": "integer",
+    "missingValueType": "mv2"
+  },
+  {
+    "name": "Monument",
+    "active": true,
+    "preferenceType": "gain",
+    "type": "decision",
+    "valueType": "enumeration",
+    "domain": [
+      "no",
+      "yes"
+    ],
+    "algorithm": "SHA-256",
+    "missingValueType": "mv2"
+  }
+]

@@ -20,7 +20,7 @@ repositories {
 
 dependencies {
 	//adding ruleLearn library
-	implementation('com.github.ruleLearn:rulelearn:0.23.3')
+	implementation('com.github.ruleLearn:rulelearn:0.25.0-rc.8')
 
 	testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.1")
 	testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.1")

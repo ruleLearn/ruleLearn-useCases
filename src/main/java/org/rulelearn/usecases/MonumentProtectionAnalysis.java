@@ -3,17 +3,25 @@
  */
 package org.rulelearn.usecases;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
+import org.rulelearn.approximations.ClassicalDominanceBasedRoughSetCalculator;
+import org.rulelearn.approximations.Union.UnionType;
 import org.rulelearn.approximations.Unions;
 import org.rulelearn.approximations.UnionsWithSingleLimitingDecision;
 import org.rulelearn.approximations.VCDominanceBasedRoughSetCalculator;
 import org.rulelearn.classification.SimpleClassificationResult;
 import org.rulelearn.classification.SimpleOptimizingRuleClassifier;
 import org.rulelearn.classification.SimpleRuleClassifier;
+import org.rulelearn.data.Attribute;
 import org.rulelearn.data.Decision;
 import org.rulelearn.data.EvaluationAttribute;
 import org.rulelearn.data.InformationTable;
@@ -21,66 +29,73 @@ import org.rulelearn.data.InformationTableBuilder;
 import org.rulelearn.data.InformationTableWithDecisionDistributions;
 import org.rulelearn.data.ObjectParseException;
 import org.rulelearn.data.SimpleDecision;
+import org.rulelearn.data.json.AttributeParser;
 import org.rulelearn.measures.dominance.EpsilonConsistencyMeasure;
 import org.rulelearn.rules.AcceptingRuleFilter;
 import org.rulelearn.rules.CompositeRuleCharacteristicsFilter;
 import org.rulelearn.rules.ConfidenceRuleFilter;
+import org.rulelearn.rules.Rule;
+import org.rulelearn.rules.RuleCoverageInformation;
 import org.rulelearn.rules.RuleFilter;
+import org.rulelearn.rules.RuleSemantics;
 import org.rulelearn.rules.RuleSet;
+import org.rulelearn.rules.RuleSetWithCharacteristics;
 import org.rulelearn.rules.RuleSetWithComputableCharacteristics;
 import org.rulelearn.rules.ruleml.RuleMLBuilder;
+import org.rulelearn.rules.ruleml.RuleParser;
 import org.rulelearn.sampling.CrossValidator;
 import org.rulelearn.types.EnumerationFieldFactory;
 import org.rulelearn.validation.OrdinalMisclassificationMatrix;
 import org.rulelearn.wrappers.VCDomLEMWrapper;
 
 /**
- * Calculations for bank customer satisfaction data set (4000 customers, divided equally into two classes).
+ * Calculations for monument protection data set (113 monuments, 57 suggested for protection, 56 not suggested for protection).
  * 
  * @author Marcin Szeląg (<a href="mailto:marcin.szelag@cs.put.poznan.pl">marcin.szelag@cs.put.poznan.pl</a>)
  */
-public class BankCustomerSatisfactionAnalysis {
-	
+public class MonumentProtectionAnalysis {
 	//PARAM 1
-	//double consistencyThreshold = 0.02; //max 40 negative objects in a dominance cone
-	double consistencyThreshold = 0.01;  //max 20 negative objects in a dominance cone
+	//double consistencyThreshold = 0.01;
+	double consistencyThreshold = 0.0;
 	
-	final String metadataPath = "src/main/resources/data/json-metadata/bank-churn-4000-v8 metadata.json";
-	final String dataPath = "src/main/resources/data/json-objects/bank-churn-4000-v8 data.json";
+	final String metadataPath = "src/main/resources/data/json-metadata/zabytki-metadata-Y1-K-numeric-ordinal.json";
+	final String dataPath = "src/main/resources/data/json-objects/zabytki-data-noMV.json";
 	
 	//PARAM 2a
 	//String ruleSetPath = "src/main/resources/data/ruleml/bank-churn-4000-v8-"+consistencyThreshold+"-rules.xml";
 	//String ruleSetPath = "src/main/resources/data/ruleml/bank-churn-4000-v8-"+consistencyThreshold+"-rules-confidence_ge_0.5.xml";
-	//String ruleSetPath = "src/main/resources/data/ruleml/bank-churn-4000-v8-"+consistencyThreshold+"-rules-confidence_gt_0.5.xml";
-	String ruleSetPath = "src/main/resources/data/ruleml/bank-churn-4000-v8-"+consistencyThreshold+"-generalized-rules-confidence_gt_0.5.xml";
+	String ruleSetPath = "src/main/resources/data/ruleml/zabytki-Y1-K-numeric-ordinal-noMV-"+consistencyThreshold+"-generalized-rules-confidence_gt_0.5.xml";
 	
 	//PARAM 2b
+	String inputRuleSetPath = "src/main/resources/data/ruleml/zabytki-Y1-K-numeric-ordinal-noMV-max6conds-min8relStrength.xml";
+	String outputRuleSetPath = "src/main/resources/data/ruleml/zabytki-Y1-K-numeric-ordinal-noMV-max6conds-min8relStrength-calculated.xml";
+	
+	//PARAM 2c
 	//RuleFilter ruleFilter = new AcceptingRuleFilter();
 	//RuleFilter ruleFilter = new ConfidenceRuleFilter(0.5, false);
 	//RuleFilter ruleFilter = new ConfidenceRuleFilter(0.5, true);
-	//RuleFilter ruleFilter = CompositeRuleCharacteristicsFilter.of("s>0&coverage-factor>=0.01");
-	RuleFilter ruleFilter = CompositeRuleCharacteristicsFilter.of("s>0");
+	RuleFilter ruleFilter = CompositeRuleCharacteristicsFilter.of("confidence>0.5");
 	
 	final int foldsCount = 10;
 	
 	final long seed0 = 0L;
-	final long seed1 = 5488762120989881L;
-	final long seed2 = 4329629961476882L;
+	final long seed1 = 8897335920153900L;
+	final long seed2 = 5347765673520470L;
 
 	//PARAM 3
 	long seed = seed0;
 	
-	final int decisionAttributeIndex = 11;
-	final String defaultClassificationResultLabel = "0";
+	final int decisionAttributeIndex = 16;
+	final String defaultClassificationResultLabel = "yes";
 	SimpleClassificationResult defaultClassificationResult;
-	
+
 	/**
 	 * Main entry point.
 	 * 
 	 * @param args command-line arguments (ignored)
 	 */
 	public static void main(String[] args) {
-		(new BankCustomerSatisfactionAnalysis()).run();
+		(new MonumentProtectionAnalysis()).run();
 	}
 	
 	/**
@@ -127,7 +142,77 @@ public class BankCustomerSatisfactionAnalysis {
 			
 			OrdinalMisclassificationMatrix avgMZEOrdinalMisclassificationMatrix = crossValidate(informationTableWithDecisionDistributions, seed, foldsCount);
 			printMisclassificationMatrix(avgMZEOrdinalMisclassificationMatrix, informationTableWithDecisionDistributions.getOrderedUniqueFullyDeterminedDecisions());
+			
+			//-----
+			
+			//calculate missing rule characteristics of already calculated rules, for considered data set 
+			RuleSet ruleSet = readRules(metadataPath, inputRuleSetPath);
+			
+			if (ruleSet != null) {
+				RuleSetWithComputableCharacteristics ruleSetWithComputableCharacteristics = transformRuleSet(informationTableWithDecisionDistributions, ruleSet, consistencyThreshold);
+				printCoveringRules(informationTableWithDecisionDistributions, ruleSetWithComputableCharacteristics);
+				writeRuleSet2RuleML(ruleSetWithComputableCharacteristics, outputRuleSetPath);
+				System.out.println("Rules with calculated characteristics written to "+outputRuleSetPath+".");
+			}
 		}
+	}
+	
+	/**
+	 * Prints a 2D matrix indexed by object index and rule index, containing "T" if corresponding object is covered by corresponding rule.
+	 * 
+	 * @param informationTable information table containing objects to be covered by rules
+	 * @param ruleSet rule set containing rules to cover objects
+	 */
+	void printCoveringRules(InformationTable informationTable, RuleSetWithCharacteristics ruleSet) {
+		final class IndexedRule {
+			int ruleIndex;
+			Rule rule;
+			int support;
+			
+			private IndexedRule(int ruleIndex, Rule rule, int support) {
+				this.ruleIndex = ruleIndex;
+				this.rule = rule;
+				this.support = support;
+			}
+			
+			public String toString() {
+				return (ruleIndex + 1)+": "+rule.toString()+" /support="+support+"/";
+			}
+		}
+		
+		int objectsCount = informationTable.getNumberOfObjects();
+		int rulesCount = ruleSet.size();
+		Rule rule;
+		int coveringRulesCount;
+		int lastCoveringRuleIndex;
+		List<IndexedRule> necessaryRules = new ArrayList<>();
+		
+		System.out.println("-----");
+		for (int objectIndex = 0; objectIndex < objectsCount; objectIndex++) {
+			coveringRulesCount = 0;
+			lastCoveringRuleIndex = -1;
+			for (int ruleIndex = 0; ruleIndex < rulesCount; ruleIndex++) {
+				rule = ruleSet.getRule(ruleIndex);
+				if (rule.covers(objectIndex, informationTable)) {
+					System.out.print("T");
+					coveringRulesCount++;
+					lastCoveringRuleIndex = ruleIndex;
+				}
+				System.out.print(";");
+			} //for
+			
+			if (coveringRulesCount == 1) { //current object covered by just one rule
+				necessaryRules.add(new IndexedRule(lastCoveringRuleIndex, ruleSet.getRule(lastCoveringRuleIndex),
+						ruleSet.getRuleCharacteristics(lastCoveringRuleIndex).getSupport()));
+			}
+			System.out.println();
+		}
+		
+		System.out.println("Necessary rules:");
+		for (IndexedRule indexedRule : necessaryRules) {
+			System.out.println(indexedRule);
+		}
+		System.out.println("-----");
 	}
 	
 	/**
@@ -286,6 +371,93 @@ public class BankCustomerSatisfactionAnalysis {
 						+"' and column '"+orderOfDecisions[j].getEvaluation(decisionAttributeIndex)+"': "
 						+ misclassificationMatrix.getValue(orderOfDecisions[i], orderOfDecisions[j])); //!
 			}
+		}
+	}
+	
+	/**
+	 * Reads rule set with characteristics from a RuleML file.
+	 * 
+	 * @param attributesFilePath path to metadata file
+	 * @param rulesFilePath path to rules file
+	 * 
+	 * @return rule set with characteristics or {@code null} in case of error
+	 */
+	RuleSetWithCharacteristics readRules(String attributesFilePath, String rulesFilePath) {
+		Attribute [] attributes = null;
+		AttributeParser attributeParser = new AttributeParser();
+		try (FileReader attributeReader = new FileReader(attributesFilePath)) {
+			attributes = attributeParser.parseAttributes(attributeReader);
+			if (attributes != null) {
+				Map<Integer, RuleSetWithCharacteristics> rules = null;
+				RuleParser ruleParser = new RuleParser(attributes);
+				try (FileInputStream fileRulesStream = new FileInputStream(rulesFilePath)) {
+					rules = ruleParser.parseRulesWithCharacteristics(fileRulesStream);
+					if (rules != null) {
+						return rules.get(1);
+					}
+					else {
+						//fail("Unable to load RuleML file.");
+						return null;
+					}
+				}
+				catch (FileNotFoundException ex) {
+					return null;
+				}
+			}
+			else {
+				//fail("Unable to load JSON file with meta-data.");
+				return null;
+			}
+		}
+		catch (FileNotFoundException ex) {
+			return null;
+		}
+		catch (IOException ex) {
+			return null;
+		}
+	}
+	
+	/**
+	 * Transforms given rule set to rule set with computable characteristics.
+	 * 
+	 * @param informationTableWithDecisionDistributions learning information table
+	 * @param ruleSet rule set (without characteristics)
+	 * @param consistencyThreshold consistency threshold for which rules have been induced
+	 * 
+	 * @return rule set with computable characteristics
+	 */
+	RuleSetWithComputableCharacteristics transformRuleSet(InformationTableWithDecisionDistributions informationTableWithDecisionDistributions, RuleSet ruleSet, double consistencyThreshold) {
+		if (ruleSet != null) {
+			//calculate all characteristics
+			UnionsWithSingleLimitingDecision unions = new UnionsWithSingleLimitingDecision(informationTableWithDecisionDistributions,
+					consistencyThreshold == 0.0 ?
+							new ClassicalDominanceBasedRoughSetCalculator() :
+							new VCDominanceBasedRoughSetCalculator(EpsilonConsistencyMeasure.getInstance(), consistencyThreshold));
+			
+			int rulesCount = ruleSet.size();
+			Rule[] rules = new Rule[rulesCount];
+			RuleCoverageInformation[] ruleCoverageInformationArray = new RuleCoverageInformation[rulesCount];
+			UnionType unionType;
+			
+			for (int i = 0; i < rulesCount; i++) {
+				rules[i] = ruleSet.getRule(i);
+				unionType = (rules[i].getSemantics() == RuleSemantics.AT_LEAST ? UnionType.AT_LEAST : UnionType.AT_MOST);
+						
+				ruleCoverageInformationArray[i] = new RuleCoverageInformation(rules[i],
+						informationTableWithDecisionDistributions,
+						unions.getUnion(unionType, new SimpleDecision(rules[i].getDecision().getLimitingEvaluation(), rules[i].getDecision().getAttributeWithContext().getAttributeIndex())));
+			}
+			
+			RuleSetWithComputableCharacteristics ruleSetWithComputableCharacteristics =
+					new RuleSetWithComputableCharacteristics(rules, ruleCoverageInformationArray);
+			
+			ruleSetWithComputableCharacteristics.calculateAllCharacteristics(); //force calculation of all characteristics
+			ruleSetWithComputableCharacteristics.setLearningInformationTableHash(ruleSet.getLearningInformationTableHash()); //copy learning information table hash!
+			
+			return ruleSetWithComputableCharacteristics;
+		} else {
+			System.out.println("Transformed rule set is null.");
+			return null;
 		}
 	}
 	
