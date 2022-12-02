@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 import org.rulelearn.approximations.ClassicalDominanceBasedRoughSetCalculator;
 import org.rulelearn.approximations.Union.UnionType;
@@ -77,14 +78,7 @@ public class MonumentProtectionAnalysis {
 	RuleFilter ruleFilter = CompositeRuleCharacteristicsFilter.of("confidence>0.5");
 	
 	final int foldsCount = 10;
-	
-	final long seed0 = 0L;
-	final long seed1 = 8897335920153900L;
-	final long seed2 = 5347765673520470L;
-
-	//PARAM 3
-	long seed = seed0;
-	
+	final long seeds[] = {0L, 8897335920153900L, 5347765673520470L};
 	final int decisionAttributeIndex = 16;
 	final String defaultClassificationResultLabel = "yes";
 	SimpleClassificationResult defaultClassificationResult;
@@ -95,7 +89,12 @@ public class MonumentProtectionAnalysis {
 	 * @param args command-line arguments (ignored)
 	 */
 	public static void main(String[] args) {
+		long startTime = System.currentTimeMillis();
 		(new MonumentProtectionAnalysis()).run();
+		long duration = System.currentTimeMillis() - startTime;
+		
+		System.out.println();
+		System.out.println("Total time [ms]: "+duration);
 	}
 	
 	/**
@@ -122,7 +121,7 @@ public class MonumentProtectionAnalysis {
 			
 			printRuleFilter(ruleFilter); //!
 
-			RuleSetWithComputableCharacteristics ruleSetWithCharacteristics = generateAndFilterRules(informationTableWithDecisionDistributions, consistencyThreshold, ruleFilter);
+			RuleSetWithComputableCharacteristics ruleSetWithCharacteristics = generateAndFilterRules(informationTableWithDecisionDistributions, consistencyThreshold, ruleFilter, "Full data. ");
 			
 			if (ruleSetWithCharacteristics != null) {
 				writeRuleSet2RuleML(ruleSetWithCharacteristics, ruleSetPath); //save rules to disk
@@ -134,14 +133,21 @@ public class MonumentProtectionAnalysis {
 			
 			System.out.println("Default decision: " + defaultClassificationResult.getSuggestedDecision().getEvaluation()); //!
 			
+			System.out.println();
 			System.out.println("-- Misclassification matrix for reclassification:"); //!
 			OrdinalMisclassificationMatrix mzeOrdinalMisclassificationMatrix = classify(ruleSetWithCharacteristics, informationTableWithDecisionDistributions, defaultClassificationResult);
 			printMisclassificationMatrix(mzeOrdinalMisclassificationMatrix, informationTableWithDecisionDistributions.getOrderedUniqueFullyDeterminedDecisions());
 			
-			System.out.println("-- Misclassification matrix for cross-validation: (seed="+seed+")"); //!
-			
-			OrdinalMisclassificationMatrix avgMZEOrdinalMisclassificationMatrix = crossValidate(informationTableWithDecisionDistributions, seed, foldsCount);
-			printMisclassificationMatrix(avgMZEOrdinalMisclassificationMatrix, informationTableWithDecisionDistributions.getOrderedUniqueFullyDeterminedDecisions());
+			for (long seed : seeds) {
+				System.out.println();
+				System.out.println("-- Misclassification matrix for cross-validation: (seed="+seed+")"); //!
+				
+				long startTime = System.currentTimeMillis();
+				OrdinalMisclassificationMatrix avgMZEOrdinalMisclassificationMatrix = crossValidate(informationTableWithDecisionDistributions, seed, foldsCount);
+				printMisclassificationMatrix(avgMZEOrdinalMisclassificationMatrix, informationTableWithDecisionDistributions.getOrderedUniqueFullyDeterminedDecisions());
+				long duration = System.currentTimeMillis() - startTime;
+				System.out.println("-- Cross-validation time [ms]: "+duration);
+			}
 			
 			//-----
 			
@@ -237,11 +243,17 @@ public class MonumentProtectionAnalysis {
 	 * @param informationTable the data
 	 * @param consistencyThreshold threshold for measure epsilon
 	 * @param ruleFilter rule filter applied to generated rules
+	 * @param comment introductory comment concerning current run of rule generation algorithm
 	 * 
 	 * @return rule set with characteristics
 	 */
-	RuleSetWithComputableCharacteristics generateAndFilterRules(InformationTable informationTable, double consistencyThreshold, RuleFilter ruleFilter) {
+	RuleSetWithComputableCharacteristics generateAndFilterRules(InformationTable informationTable, double consistencyThreshold, RuleFilter ruleFilter, String comment) {
+		long startTime = System.currentTimeMillis();
 		RuleSetWithComputableCharacteristics ruleSetWithCharacteristics = (new VCDomLEMWrapper()).induceRulesWithCharacteristics(informationTable, consistencyThreshold);
+		long duration = System.currentTimeMillis() - startTime;
+		
+		System.out.println(comment+"Rules' generation time [ms]: "+duration);
+		
 		ruleSetWithCharacteristics.setLearningInformationTableHash(informationTable.getHash()); //save data hash along with rules
 		
 		return ruleSetWithCharacteristics.filter(ruleFilter); //apply rule filter (replaces rule set, retains hash)
@@ -288,26 +300,48 @@ public class MonumentProtectionAnalysis {
 		crossValidator.setSeed(seed);
 		List<CrossValidator.CrossValidationFold<InformationTable>> folds = crossValidator.splitStratifiedIntoKFolds(informationTableWithDecisionDistributions, foldsCount); //split data in foldsCount folds
 		
-		InformationTable foldTrainData;
-		InformationTable foldTestData;
+		final class IndexedFold {
+			int index; //starting from 1
+			InformationTable trainData;
+			InformationTable testData;
+			
+			public IndexedFold(int foldIndex, InformationTable foldTrainData, InformationTable foldTestData) {
+				this.index = foldIndex;
+				this.trainData = foldTrainData;
+				this.testData = foldTestData;
+			}
+		}
+		
+		List<IndexedFold> indexedFolds = new ArrayList<>(foldsCount);
+		for (int i = 0; i < foldsCount; i++) {
+			indexedFolds.add(new IndexedFold(i+1, folds.get(i).getTrainingTable(), folds.get(i).getValidationTable()));
+		}
 		
 		OrdinalMisclassificationMatrix[] mzeOrdinalMisclassificationMatrices = new OrdinalMisclassificationMatrix[foldsCount];
 		OrdinalMisclassificationMatrix avgMZEOrdinalMisclassificationMatrix;
 		
-		RuleSetWithComputableCharacteristics ruleSetWithCharacteristics;
+//		InformationTable foldTrainData;
+//		InformationTable foldTestData;
+//		RuleSetWithComputableCharacteristics ruleSetWithCharacteristics;
+//		
+//		for (int foldIndex = 0; foldIndex < foldsCount; foldIndex++) {
+//			foldTrainData = folds.get(foldIndex).getTrainingTable();
+//			foldTestData = folds.get(foldIndex).getValidationTable();
+//			
+//			System.out.println("Starting fold " + (foldIndex + 1) + "/" + foldsCount + ": train="+foldTrainData.getNumberOfObjects()+", test="+foldTestData.getNumberOfObjects()+" objects. ");
+//			
+//			ruleSetWithCharacteristics = generateAndFilterRules(foldTrainData, consistencyThreshold, ruleFilter,"  Fold "+(foldIndex + 1)+"/"+foldsCount+". ");
+//			
+//			mzeOrdinalMisclassificationMatrices[foldIndex] = classify(ruleSetWithCharacteristics, foldTestData, defaultClassificationResult);
+//		} //for foldIndex
 		
-		for (int foldIndex = 0; foldIndex < foldsCount; foldIndex++) {
-			System.out.print("Starting fold " + (foldIndex + 1) + "/" + foldsCount);
-			
-			foldTrainData = folds.get(foldIndex).getTrainingTable();
-			foldTestData = folds.get(foldIndex).getValidationTable();
-			
-			System.out.println(": train="+foldTrainData.getNumberOfObjects()+", test="+foldTestData.getNumberOfObjects()+" objects.");
-			
-			ruleSetWithCharacteristics = generateAndFilterRules(foldTrainData, consistencyThreshold, ruleFilter);
-			
-			mzeOrdinalMisclassificationMatrices[foldIndex] = classify(ruleSetWithCharacteristics, foldTestData, defaultClassificationResult);
-		} //for foldIndex
+		//do in parallel sequences of rule learning on train data and classification with the rules on test data		
+		mzeOrdinalMisclassificationMatrices = indexedFolds.parallelStream()
+			.map(fold -> {
+				System.out.println("Starting fold "+(fold.index)+"/"+foldsCount+": train="+fold.trainData.getNumberOfObjects()+", test="+fold.testData.getNumberOfObjects()+" objects.");
+				return classify(generateAndFilterRules(fold.trainData, consistencyThreshold, ruleFilter, "  Fold "+(fold.index)+"/"+foldsCount+". "), fold.testData, defaultClassificationResult);
+			})
+			.collect(Collectors.toList()).toArray(mzeOrdinalMisclassificationMatrices);
 		
 		avgMZEOrdinalMisclassificationMatrix = new OrdinalMisclassificationMatrix(true, informationTableWithDecisionDistributions.getOrderedUniqueFullyDeterminedDecisions(),
 				mzeOrdinalMisclassificationMatrices); //accumulated misclassification matrix
