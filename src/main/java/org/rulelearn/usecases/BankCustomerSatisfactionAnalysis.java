@@ -59,15 +59,16 @@ public class BankCustomerSatisfactionAnalysis {
 	//PARAM 2b
 	//RuleFilter ruleFilter = new AcceptingRuleFilter();
 	//RuleFilter ruleFilter = new ConfidenceRuleFilter(0.5, false);
-	RuleFilter ruleFilter = new ConfidenceRuleFilter(0.5, true);
-	//RuleFilter ruleFilter = CompositeRuleCharacteristicsFilter.of("s>0&coverage-factor>=0.01");
+	//RuleFilter ruleFilter = new ConfidenceRuleFilter(0.5, true);
 	//RuleFilter ruleFilter = CompositeRuleCharacteristicsFilter.of("s>0");
+	RuleFilter ruleFilter = CompositeRuleCharacteristicsFilter.of("s > 0 & coverage-factor >= 0.01");
 	
 	final int foldsCount = 10;
 	final long seeds[] = {0L, 5488762120989881L, 4329629961476882L};
 	final int decisionAttributeIndex = 11;
 	final String defaultClassificationResultLabel = "0";
 	SimpleClassificationResult defaultClassificationResult;
+	List<Double> averageAccuracies = new ArrayList<Double>(seeds.length);
 	
 	/**
 	 * Main entry point.
@@ -134,7 +135,12 @@ public class BankCustomerSatisfactionAnalysis {
 				printMisclassificationMatrix(avgMZEOrdinalMisclassificationMatrix, informationTableWithDecisionDistributions.getOrderedUniqueFullyDeterminedDecisions());
 				long duration = System.currentTimeMillis() - startTime;
 				System.out.println("-- Cross-validation time [ms]: "+duration);
+				
+				averageAccuracies.add(avgMZEOrdinalMisclassificationMatrix.getAccuracy());
 			}
+			
+			System.out.println();
+			System.out.println("Average over all CVs: "+averageAccuracies.stream().collect(Collectors.averagingDouble(num -> num)));
 		}
 	}
 	
@@ -274,11 +280,12 @@ public class BankCustomerSatisfactionAnalysis {
 	void printRuleFilter(RuleFilter ruleFilter) {
 		if (ruleFilter instanceof AcceptingRuleFilter) {
 			System.out.println("Rule filter: accepting rule filter.");
-		} else {
-			if (ruleFilter instanceof ConfidenceRuleFilter) { //Confidence rule filter
+		} else if (ruleFilter instanceof ConfidenceRuleFilter) { //Confidence rule filter
 				ConfidenceRuleFilter confidenceRuleFilter = (ConfidenceRuleFilter)ruleFilter;
 				System.out.println("Rule filter: confidence rule filter (confidence "+(confidenceRuleFilter.getStrictComparison() ? "> " : ">= ")+confidenceRuleFilter.getConfidenceThreshold()+")");
-			}
+		} else {
+			System.out.println("Rule filter: "+ruleFilter.toString());
+
 		}
 	}
 	

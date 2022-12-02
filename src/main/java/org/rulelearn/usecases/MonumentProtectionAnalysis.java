@@ -82,6 +82,7 @@ public class MonumentProtectionAnalysis {
 	final int decisionAttributeIndex = 16;
 	final String defaultClassificationResultLabel = "yes";
 	SimpleClassificationResult defaultClassificationResult;
+	List<Double> averageAccuracies = new ArrayList<Double>(seeds.length);
 
 	/**
 	 * Main entry point.
@@ -147,7 +148,12 @@ public class MonumentProtectionAnalysis {
 				printMisclassificationMatrix(avgMZEOrdinalMisclassificationMatrix, informationTableWithDecisionDistributions.getOrderedUniqueFullyDeterminedDecisions());
 				long duration = System.currentTimeMillis() - startTime;
 				System.out.println("-- Cross-validation time [ms]: "+duration);
+				
+				averageAccuracies.add(avgMZEOrdinalMisclassificationMatrix.getAccuracy());
 			}
+			
+			System.out.println();
+			System.out.println("Average over all CVs: "+averageAccuracies.stream().collect(Collectors.averagingDouble(num -> num)));
 			
 			//-----
 			
@@ -357,11 +363,11 @@ public class MonumentProtectionAnalysis {
 	void printRuleFilter(RuleFilter ruleFilter) {
 		if (ruleFilter instanceof AcceptingRuleFilter) {
 			System.out.println("Rule filter: accepting rule filter.");
-		} else {
-			if (ruleFilter instanceof ConfidenceRuleFilter) { //Confidence rule filter
+		} else if (ruleFilter instanceof ConfidenceRuleFilter) { //Confidence rule filter
 				ConfidenceRuleFilter confidenceRuleFilter = (ConfidenceRuleFilter)ruleFilter;
 				System.out.println("Rule filter: confidence rule filter (confidence "+(confidenceRuleFilter.getStrictComparison() ? "> " : ">= ")+confidenceRuleFilter.getConfidenceThreshold()+")");
-			}
+		} else {
+			System.out.println("Rule filter: "+ruleFilter.toString());
 		}
 	}
 	
